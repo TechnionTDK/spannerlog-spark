@@ -10,9 +10,9 @@ resolvers += Resolver.sonatypeRepo("releases")
 
 //resolvers += "spark-packages" at "https://dl.bintray.com/spark-packages/maven/"
 
-libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.1.1" //% "provided"
+libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provided"
 
-libraryDependencies += "org.apache.spark" % "spark-sql_2.11" % "2.1.1" //% "provided"
+libraryDependencies += "org.apache.spark" % "spark-sql_2.11" % "2.1.1" % "provided"
 
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0"
 
