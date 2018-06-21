@@ -18,7 +18,7 @@ object Runner {
     val ss: SparkSession = SparkSession
       .builder()
       .appName("Spannerlog")
-      .config("spark.master", "local")
+//      .config("spark.master", "local")
       .getOrCreate()
 
     ss.conf.set("spark.sql.broadcastTimeout", 70000)

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97516b83-acce-4ac4-a9a4-4a5af84ff586" name="Default" comment="" />
+    <list default="true" id="97516b83-acce-4ac4-a9a4-4a5af84ff586" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/scala/spannerlog/Runner.scala" afterPath="$PROJECT_DIR$/src/main/scala/spannerlog/Runner.scala" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -58,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runner.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Runner.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/spannerlog/Runner.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
-              <caret line="28" column="98" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="28" selection-end-column="98" />
+            <state relative-caret-position="357">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding>
                 <element signature="e#20#60#0" expanded="true" />
               </folding>
@@ -92,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KinasesExtractor.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KinasesExtractor.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/spannerlog/app_01_pubmed/KinasesExtractor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
+            <state relative-caret-position="238">
               <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
                 <element signature="e#34#81#0" expanded="true" />
@@ -230,8 +232,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/spannerlog/app_02_reuters/TransactionsExtractor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spannerlog/app_01_pubmed/KinasesExtractor.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
-        <option value="$PROJECT_DIR$/src/main/scala/spannerlog/Runner.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spannerlog/app_04_splitter_framework/SimpleReviewsExtractor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spannerlog/Runner.scala" />
       </list>
     </option>
   </component>
@@ -1138,16 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spannerlog/Runner.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="28" column="98" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="28" selection-end-column="98" />
-          <folding>
-            <element signature="e#20#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/spannerlog/app_04_splitter_framework/SimpleReviewsExtractor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -1160,10 +1152,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/spannerlog/app_01_pubmed/KinasesExtractor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
+        <state relative-caret-position="238">
           <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="e#34#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spannerlog/Runner.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#20#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
