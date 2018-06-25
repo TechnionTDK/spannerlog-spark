@@ -3,9 +3,6 @@ package spannerlog
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.{SparkConf, SparkContext}
 import spannerlog.Utils.{isRunningOnLocal, log, timeit, total}
-import spannerlog.app_01_pubmed.KinasesExtractor
-import spannerlog.app_02_reuters.TransactionsExtractor
-import spannerlog.app_03_amazon.ReviewsExtractor
 import spannerlog.app_04_splitter_framework.TriGramExtractor
 
 object Runner {
@@ -32,24 +29,15 @@ object Runner {
       case "01-pubmed" =>
         if (args.length != 3)
           throw new IllegalArgumentException(s"Three arguments are expected but ${args.length} were passed")
-        KinasesExtractor.ss = ss
-        KinasesExtractor.setExperiment(args(1), args(2))
-        KinasesExtractor.compile()
-        KinasesExtractor.run()
+
       case "02-reuters" =>
         if (args.length != 4)
           throw new IllegalArgumentException(s"Four arguments are expected but ${args.length} were passed")
-        TransactionsExtractor.ss = ss
-        TransactionsExtractor.setExperiment(args(1), args(2), args(3).toBoolean)
-        TransactionsExtractor.compile()
-        TransactionsExtractor.run()
+
       case "03-amazon" =>
         if (args.length != 4)
           throw new IllegalArgumentException(s"Four arguments are expected but ${args.length} were passed")
-        ReviewsExtractor.ss = ss
-        ReviewsExtractor.setExperiment(args(1), args(2), args(3).toBoolean)
-        ReviewsExtractor.compile()
-        ReviewsExtractor.run()
+
       case "04-splitter-framework" =>
         if (args.length != 4)
           throw new IllegalArgumentException(s"Four arguments are expected but ${args.length} were passed")
