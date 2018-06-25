@@ -8,7 +8,7 @@ import spannerlog.{Runner, SparkSessionApp}
 
 import scala.util.matching.Regex
 
-object SimpleReviewsExtractor extends SparkSessionApp {
+object TriGramExtractor extends SparkSessionApp {
   var title: String = _
   var split: Boolean = _
   var datasetPath: String = _
@@ -40,10 +40,14 @@ object SimpleReviewsExtractor extends SparkSessionApp {
 
     import ss.implicits._
     val articles: Dataset[String] = ss.read
-      .option("header", "false")
+      .option("header", "true")
       .schema(StructType(wikipediaSchemaArray))
-      .text(datasetPath).as[String]
+      .text(datasetPath)
+      .as[String]
     //    reviews.show()
+
+//    log.append("count:" + articles.count() + "\n")
+
     articles.cache()
     articles.createOrReplaceTempView("articles")
 

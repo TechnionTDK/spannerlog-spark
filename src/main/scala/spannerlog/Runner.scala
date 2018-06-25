@@ -6,7 +6,7 @@ import spannerlog.Utils.{isRunningOnLocal, log, timeit, total}
 import spannerlog.app_01_pubmed.KinasesExtractor
 import spannerlog.app_02_reuters.TransactionsExtractor
 import spannerlog.app_03_amazon.ReviewsExtractor
-import spannerlog.app_04_splitter_framework.SimpleReviewsExtractor
+import spannerlog.app_04_splitter_framework.TriGramExtractor
 
 object Runner {
 
@@ -18,7 +18,7 @@ object Runner {
     val ss: SparkSession = SparkSession
       .builder()
       .appName("Spannerlog")
-      .config("spark.master", "local")
+//      .config("spark.master", "local")
       .getOrCreate()
 
     ss.conf.set("spark.sql.broadcastTimeout", 70000)
@@ -53,10 +53,10 @@ object Runner {
       case "04-splitter-framework" =>
         if (args.length != 4)
           throw new IllegalArgumentException(s"Four arguments are expected but ${args.length} were passed")
-        SimpleReviewsExtractor.ss = ss
-        SimpleReviewsExtractor.setExperiment(args(1), args(2), args(3).toBoolean)
-        SimpleReviewsExtractor.compile()
-        SimpleReviewsExtractor.run()
+        TriGramExtractor.ss = ss
+        TriGramExtractor.setExperiment(args(1), args(2), args(3).toBoolean)
+        TriGramExtractor.compile()
+        TriGramExtractor.run()
     }
     log.append(s"\nTotal time: $total\n")
     println(log)
