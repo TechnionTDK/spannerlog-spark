@@ -14,12 +14,11 @@ libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provi
 
 libraryDependencies += "org.apache.spark" % "spark-sql_2.11" % "2.1.1" % "provided"
 
-libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0"
+// libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0"
 
+// libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0" classifier "models-english"
 
-libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0" classifier "models-english"
-
-//libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0" classifier "models-english-kbp"
+////libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0" classifier "models-english-kbp"
 
 libraryDependencies += "org.json4s" % "json4s-native_2.11" % "3.5.2"
 
