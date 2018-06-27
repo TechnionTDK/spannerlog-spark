@@ -60,13 +60,13 @@ object TriGramExtractor extends SparkSessionApp {
       "SELECT explode(RGX(text)) " +
       "FROM articles ")
 
-    val collected: Array[Row] = results.take(100);
-
-    log append s"results set size: ${collected.length}\n"
-    log append(collected.take(10).mkString("\n") + "\n")
-
-
+    val count: Long = results.count()
+    log append s"results set size: $count\n"
+//    val collected: Array[Row] = results.collect()
+//
 //    log append s"results set size: ${collected.length}\n"
+//    log append(collected.take(10).mkString("\n") + "\n")
+
   }
 }
 
