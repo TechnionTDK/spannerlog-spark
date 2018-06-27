@@ -19,7 +19,7 @@ object TriGramExtractor extends SparkSessionApp {
     this.split = split.equals("split")
     this.datasetPath =
       (if (isRunningOnLocal) s"src/main/resources/wikipedia/$split/"
-      else Runner.hdfsUrl + s"thesis/benchmark/05-wikipedia/$split/app-spark/") + "wiki-articles.csv"
+      else Runner.hdfsUrl + s"thesis/benchmark/05-wikipedia/$test/$split/app-spark/") + "wiki-articles.csv"
     this.isOneSentence = isOneSentence
 
     log.append(s"title: $title\n")
